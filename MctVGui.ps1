@@ -246,7 +246,8 @@ function submitForm
 
             #Create the routerMac xml
             $routermac = $config.XML.CreateElement("router_mac")
-            $routermac.SetAttribute("value"
+            $routermac.SetAttribute("value", $mctInfo.getRouterMac())
+            $Parent.AppendChild($routermac)
 
             
             #create the interface xml
