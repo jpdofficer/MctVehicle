@@ -243,6 +243,11 @@ function submitForm
             $ipaddy = $configXML.CreateElement("ip")
             $ipaddy.SetAttribute("value", $mctInfo.getIpAddress())
             $Parent.AppendChild($ipaddy)
+
+            #Create the routerMac xml
+            $routermac = $config.XML.CreateElement("router_mac")
+            $routermac.SetAttribute("value"
+
             
             #create the interface xml
             $inter = $configXML.CreateElement("interface")
